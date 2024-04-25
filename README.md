@@ -5,7 +5,7 @@
 
 # Questions:
 
-1. program1.md -- 20 Marks
+1. program1.md -- 10 Marks
 2. program2.md -- 20 Marks
 
 
@@ -23,7 +23,7 @@ The test script (`test1.js`), (`test2.js`) is designed to check the correctness 
     
     ```   
     ``` 
-    node program2.py
+    node program2.js
 4. To Execute the test script by run the command:
     ```bash
     npm run test1

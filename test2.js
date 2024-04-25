@@ -1,13 +1,33 @@
-const smallestMissingPositiveInteger = require('./program2');
+const assert = require("assert");
+const { longestSubstring } = require("./program2");
 
-function testSmallestMissingPositiveInteger() {
-    console.log(smallestMissingPositiveInteger([3, 4, -1, 1]) === 2);  // Output should be true
-    console.log(smallestMissingPositiveInteger([1, 2, 0]) === 3);  // Output should be true
-    console.log(smallestMissingPositiveInteger([-1, -3, 4, 2]) === 1);  // Output should be true
-}
+describe("Test cases for longestSubstring function", function () {
 
-// Run the test cases
-testSmallestMissingPositiveInteger();
+    it("Returns 3 for 'abcabcbb'", function () {
+        const result = longestSubstring("abcabcbb");
+        assert.equal(result, 3);
+    });
 
+    it("Returns 1 for 'bbbbb'", function () {
+        const result = longestSubstring("bbbbb");
+        assert.equal(result, 1);
+    });
+
+    it("Returns 3 for 'pwwkew'", function () {
+        const result = longestSubstring("pwwkew");
+        assert.equal(result, 3);
+    });
+
+    it("Returns 0 for an empty string", function () {
+        const result = longestSubstring("");
+        assert.equal(result, 0);
+    });
+
+    it("Returns 1 for a string with one character", function () {
+        const result = longestSubstring("a");
+        assert.equal(result, 1);
+    });
+
+});
 
 

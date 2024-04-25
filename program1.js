@@ -1,7 +1,9 @@
-function longestSubstring(s) {
-    // Implementation of longestSubstring function
-}
+function smallestMissingPositiveInteger(nums) {
 
-module.exports = { longestSubstring };
 
+    // Implement the function smallest_missing_positive_integer
+  
+  }
+  
+  module.exports = smallestMissingPositiveInteger;
 
