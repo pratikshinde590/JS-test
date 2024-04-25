@@ -1,11 +1,7 @@
-/**
- * @param {string} s
- * @return {boolean}
- */
-var isValid = function(s) {
-    
-};
+function longestSubstring(s) {
+    // Implementation of longestSubstring function
+}
 
-module.exports = { isValid };
+module.exports = { longestSubstring };
 
 

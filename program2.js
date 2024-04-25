@@ -1,10 +1,7 @@
-/**
- * @param {string} s
- * @return {number}
- */
-var romanToInt = function(s) {
-    
-};
+function smallestMissingPositiveInteger(nums) {
 
+  // Implement the function smallest_missing_positive_integer
 
-module.exports={romanToInt}
+}
+
+module.exports = smallestMissingPositiveInteger;
