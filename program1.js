@@ -1,9 +1,9 @@
-function smallestMissingPositiveInteger(nums) {
+  const getTotalIsles = function (grid) {
 
 
-    // Implement the function smallest_missing_positive_integer
+    // Implementation of getTotalIsles function
+
+  };
   
-  }
-  
-  module.exports = smallestMissingPositiveInteger;
+  module.exports = getTotalIsles;
 
