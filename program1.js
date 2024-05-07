@@ -1,7 +1,7 @@
   const getTotalIsles = function (grid) {
 
 
-    // Implementation of getTotalIsles function
+    // write your code here
 
   };
   

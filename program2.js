@@ -1,7 +1,7 @@
-function longestSubstring(s) {
+const decodeTheRing = function (s, p) {
 
+    // write your code here
 
-    // Implementation of longestSubstring function
-}
-
-module.exports = { longestSubstring };
+  };
+  
+  module.exports = decodeTheRing;
