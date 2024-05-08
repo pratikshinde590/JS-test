@@ -1,19 +1,34 @@
-const getTotalIsles = require('./program1');
 const assert = require("assert");
+const { longestSubstring } = require("./program1");
 
+describe("Test cases for longestSubstring function", function () {
 
-describe("Test cases for finding total number of Islands", function () {
-
-    it(`Returns 1 for [["L","L","L","L","W"],["L","L","W","L","W"],["L","L","W","W","W"],["W","W","W","W","W"]]`, function () {
-        const result = getTotalIsles([["L","L","L","L","W"],["L","L","W","L","W"],["L","L","W","W","W"],["W","W","W","W","W"]]);
-        assert.equal(result, 1);
-    });
-    it(`Returns 3 for [["L","L","W","W","W"],["L","L","W","W","W"],["W","W","L","W","W"],["W","W","W","L","L"]]`, function () {
-        const result = getTotalIsles([["L","L","W","W","W"],["L","L","W","W","W"],["W","W","L","W","W"],["W","W","W","L","L"]]);
+    it("Returns 3 for 'abcabcbb'", function () {
+        const result = longestSubstring("abcabcbb");
         assert.equal(result, 3);
     });
-    it(`Returns 1 for [["W", "W", "W", "W"], ["W", "L", "L", "W"], ["W", "L", "L", "W"], ["W", "W", "W", "W"]]`, function () {
-        const result = getTotalIsles([["W", "W", "W", "W"], ["W", "L", "L", "W"], ["W", "L", "L", "W"], ["W", "W", "W", "W"]]);
+
+    it("Returns 1 for 'bbbbb'", function () {
+        const result = longestSubstring("bbbbb");
         assert.equal(result, 1);
     });
+
+    it("Returns 3 for 'pwwkew'", function () {
+        const result = longestSubstring("pwwkew");
+        assert.equal(result, 3);
+    });
+
+    it("Returns 0 for an empty string", function () {
+        const result = longestSubstring("");
+        assert.equal(result, 0);
+    });
+
+    it("Returns 1 for a string with one character", function () {
+        const result = longestSubstring("a");
+        assert.equal(result, 1);
+    });
+
 });
+
+
+

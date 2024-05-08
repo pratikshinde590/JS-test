@@ -1,9 +1,8 @@
-  const getTotalIsles = function (grid) {
+function longestSubstring(s) {
 
+// write your code here !
 
-    // write your code here
+}
 
-  };
-  
-  module.exports = getTotalIsles;
+module.exports = { longestSubstring };
 

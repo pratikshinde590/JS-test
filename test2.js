@@ -1,21 +1,13 @@
-const assert = require("assert");
-const decodeTheRing = require("./program2");
- 
-describe("Test cases for decodeTheRing function", function () {
-  it(`Returns true for "hello", "h*llo"`, function () {
-    const result = decodeTheRing("hello", "h*llo");
-    assert.equal(result, true);
-  });
- 
-  it(`Returns false for "secret", "sec?"`, function () {
-    const result = decodeTheRing("secret", "sec?");
-    assert.equal(result, false);
-  });
- 
-  it(`Returns false for "codeword", "c*de"`, function () {
-    const result = decodeTheRing("codeword", "c*de");
-    assert.equal(result, false);
-  });
-});
+const smallestMissingPositiveInteger = require('./program2');
+
+function testSmallestMissingPositiveInteger() {
+    console.log(smallestMissingPositiveInteger([3, 4, -1, 1]) === 2);  // Output should be true
+    console.log(smallestMissingPositiveInteger([1, 2, 0]) === 3);  // Output should be true
+    console.log(smallestMissingPositiveInteger([-1, -3, 4, 2]) === 1);  // Output should be true
+}
+
+// Run the test cases
+testSmallestMissingPositiveInteger();
+
 
 
