@@ -1,8 +1,7 @@
-function smallestMissingPositiveInteger(nums) {
+const decodeTheRing = function (s, p) {
 
-// write your code here !
- 
-}
+    // write your code here
 
-module.exports = smallestMissingPositiveInteger;
-
+  };
+  
+  module.exports = decodeTheRing;
